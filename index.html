@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas</title>
+  <link href='https://fonts.googleapis.com/css?family=League+Script' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Bad+Script|Gruppo|Kumar+One+Outline|League+Script|Londrina+Outline|Monoton|Sriracha|Yellowtail&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?+'>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <audio id="audio" src="https://wutom.club/media/bgms/Christmas.mp3" autoplay controls></audio>
+  <div class="name">
+   <x-sign>
+    Merry Christmas
+  </x-sign>
+
+  <x-sign>
+    Love You
+  </x-sign>
+  </div>
+  <ul class="tree">
+    <div class="star"></div>
+    <div class="chunk"></div>
+  </ul>
+</body>
+<script>
+  let tree = document.querySelector(".tree");
+  for (let i = 0; i < 129; i++) {
+    let li = document.createElement("li");
+    li.style = `--i:${i}`;
+    tree.appendChild(li);
+  }
+</script>
+</html>
